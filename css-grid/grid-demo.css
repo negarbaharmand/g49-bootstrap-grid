@@ -1,0 +1,16 @@
+.grid-item {
+  background-color: lightblue;
+  border: 1px solid darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px; */
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
